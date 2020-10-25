@@ -3,7 +3,6 @@ title: "First Post"
 date: 2020-10-24T00:30:18-04:00
 draft: true
 katex: true
-# markup: "mmark"
 ---
 
 
