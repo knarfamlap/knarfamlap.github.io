@@ -8,6 +8,9 @@ pygmentscodefencesguesssyntax = true
 
 paginate=3 # articles per page
 
+enableEmoji = true
+katex = true
+
 [params]
 mode="dark"
 
