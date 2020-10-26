@@ -1,4 +1,4 @@
-baseURL = "http://knarfamlap.github.io/"
+baseURL = "https://knarfamlap.github.io/"
 languageCode = "en-us"
 title = "Frank Palma Gomez"
 theme = "archie"
