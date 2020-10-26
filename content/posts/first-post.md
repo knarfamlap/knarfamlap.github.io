@@ -1,6 +1,7 @@
 ---
 title: "First Post"
 date: 2020-10-24T00:30:18-04:00
+description: Here we go! First Post. 
 draft: true
 katex: true
 ---
