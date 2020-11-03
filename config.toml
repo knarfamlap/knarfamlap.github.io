@@ -1,40 +1,40 @@
 baseURL = "https://knarfamlap.github.io/"
 languageCode = "en-us"
-title = "Frank Palma Gomez"
-theme = "archie"
-copyright = "© knarfamlap"
-pygmentscodefences = true
-pygmentscodefencesguesssyntax = true
+DefaultContentLanguage = "en"
 
-paginate=3 # articles per page
+pygmentsCodefences = true
+pygmentsStyle = "colorful"
+
+paginate = 20
+
+title = "Frank Palma Gomez"
+theme = "flamingo"
+[markup.goldmark.renderer]
+unsafe = true
 
 enableEmoji = true
-katex = true
+enableGitInfo = true
+enableRobotsTXT = true
+canonifyURLs = true
+
 
 [params]
-mode="dark"
+  author = "Frank Palma Gomez"
+  sitename = "Frank Palma's blog"
+  github = "https://github.com/knarfamlap"
+  favicon = "/images/favicon.ico"
+  resume = "https://github.com/knarfamlap"
 
-[[params.social]]
-name = "GitHub"
-icon = "github"
-url = "https://github.com/knarfamlap/"
+# Projects list
 
-[[menu.main]]
-name = "Casa"
-url = "/"
-weight = 1
+[[params.projects]]
+  name = "Naive Bayes From Scratch"
+  description = "Simple naive bayes implementation that works in the web."
+  demoLink = ""
+  sourceLink = ""
 
-[[menu.main]]
-name = "All Posts"
-url = "/posts"
-weight = 2
-
-[[menu.main]]
-name = "About"
-url = "/about"
-weight = 3
-
-[[menu.main]]
-name = "Tags"
-url = "/tags"
-weight = 4
+[languages]
+  [languages.en]
+    languageName = "English"
+    languageCode = "en-us"
+    weight = 1
