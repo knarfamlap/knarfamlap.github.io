@@ -3,7 +3,7 @@ title = "Understanding Naive Bayes Classifier"
 author = ["knarfamlap"]
 date = 2020-11-02
 tags = ["machine-learning", "ai", ]
-draft = true
+draft = false
 aliases = "/post/understanding-naiv-bayes-classifier"
 +++
 
