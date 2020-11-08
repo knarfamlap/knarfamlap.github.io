@@ -25,6 +25,8 @@ canonifyURLs = true
   favicon = "/images/favicon.ico"
   resume = "https://github.com/knarfamlap"
 
+
+
 # Projects list
 
 [[params.projects]]

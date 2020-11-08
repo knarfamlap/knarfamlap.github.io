@@ -9,8 +9,11 @@ aliases = "/post/understanding-naiv-bayes-classifier"
 
 This is a post about naive bayes
 
-<!-- <div class="post-image">
-  <img src="/images/gatsby-dev.gif" />
-</div> -->
+
+$$
+\begin{aligned}
+  \int_0^x e^{-x} dx 
+\end{aligned}
+$$
 
 Frank
