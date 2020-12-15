@@ -1,42 +1,51 @@
 baseURL = "https://knarfamlap.github.io/"
-languageCode = "en-us"
-DefaultContentLanguage = "en"
-
-pygmentsCodefences = true
-pygmentsStyle = "colorful"
-
-paginate = 20
-
+defaultContentLanguage = "en"
+hasCJKLanguage = true
+languageCode = "en"
+paginate = 6
+theme = "hugo-theme-texify"
 title = "Frank Palma Gomez"
-theme = "flamingo"
-[markup.goldmark.renderer]
-unsafe = true
 
-enableEmoji = true
-enableGitInfo = true
-enableRobotsTXT = true
-canonifyURLs = true
+disqusShortname = ""
+googleAnalytics = ""
+pygmentsUseClasses = true
 
+[author]
+name = "Frank Palma Gomez"
+
+[markup]
+  defaultMarkdownHandler = "goldmark"
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[[menu.main]]
+  identifier = "posts"
+  name = "Post"
+  url = "/"
+  weight = 1
+
+[[menu.main]]
+  identifier = "projects"
+  name = "Projects"
+  url = "/projects/"
+  weight = 2
+
+[[menu.main]]
+  identifier = "Papers"
+  name = "Papers"
+  url = "/papers/"
+  weight = 3
+
+[[menu.main]]
+  identifier = "about"
+  name = "About"
+  url = "/about/"
+  weight = 4
 
 [params]
-  author = "Frank Palma Gomez"
-  sitename = "Frank Palma's blog"
-  github = "https://github.com/knarfamlap"
-  favicon = "/images/favicon.ico"
-  resume = "https://github.com/knarfamlap"
-
-
-
-# Projects list
-
-[[params.projects]]
-  name = "Naive Bayes From Scratch"
-  description = "Simple naive bayes implementation that works in the web."
-  demoLink = ""
-  sourceLink = ""
-
-[languages]
-  [languages.en]
-    languageName = "English"
-    languageCode = "en-us"
-    weight = 1
+  custom_css = []
+  description = "an example site for hugo theme TeXify"
+  enable_mathjax = true
+  footnote = "Follow me on <a class=link href=https://github.com/knarfamlap>GitHub</a>"
+  keywords = ["hugo", "latex", "theme"]
