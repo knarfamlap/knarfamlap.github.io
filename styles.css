@@ -178,3 +178,8 @@ icon {
 svg path {
     fill: #3ab800;
 }
+
+#col {
+  column-count: 2;
+
+}
