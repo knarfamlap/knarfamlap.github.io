@@ -30,3 +30,11 @@ p {
   color: rgb(82, 171, 144);
 }
 
+a:link {
+  color: rgb(82, 171, 144);
+}
+
+a:visited {
+  color: rgb(82, 171, 144);
+  background-color: transparent;
+}
