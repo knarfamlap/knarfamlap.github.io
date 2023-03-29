@@ -1,0 +1,66 @@
+<body styles="margin:0 auto;">
+  <h1 id="a-basic-intro-to-reinforment-learning">A Basic Intro to
+    Reinforment Learning</h1>
+  <p>Reinforment Learning (RL) has recieved a lot of attention within the
+  NLP field. Partly because of ChatGPT and other works that have
+  succefully used human feedback to training large language models (LLM).</p>
+  <p>In the middle of all this exitement, I decided to take a closer look
+  at the basic components of RL and jot notes down. This document is more
+  of a summary highlighting some the important fundational concepts needed
+  to communicate and understand the ideas and concepts in RL. This by no
+  means is a complete thing, but its the things I found useful and
+  important to understand to start getting my hands dirty with RL.</p>
+  <h2 id="an-agent-and-its-enviroment">An agent and its enviroment</h2>
+  <p>In RL you have an <strong>agent</strong> and
+  <strong>enviroment</strong>. The agent lives within this enviroment and
+  interacts with this enviroment by taking <strong>actions</strong>. At
+  every step, an agent asks itself the question: <strong>What action
+    should I take?</strong></p>
+  <p>For every <strong>action</strong> that the agent take within the
+  enviroment, its recieves a <strong>reward</strong>. This reward tells
+  the agent how good or bad that action was. If its a good action, then
+  its a high reward. If its a bad its a low reward. Ultimately, the agent
+  wants to maximize the cumulitive reward. This is known as the
+  <strong>return</strong>.</p>
+  <h2 id="states-and-observations">States and Observations</h2>
+  <p>An enviroment contains <strong>states</strong> which describe the
+  state of the world. In a state, <span
+                                      class="math inline"><em>s</em></span> , all the information is available
+                                    and nothings is hidden. An obeservation, <span
+                                                                                 class="math inline"><em>o</em></span>, is a partial description of the
+                                                                               state. An observation may omit information from the state.</p>
+  <p><strong>fully observed</strong>: The agent can obeserve the complete
+  state of the enviroment. <strong>partially observed</strong>: An agent
+  can only see an observation.</p>
+  <h2 id="action-spaces">Action Spaces</h2>
+  <p>When an agent is in an enviroment, it can take different types of
+  actions. If we take a LLM as an agent, then at each decoding step the
+  model has the option to choose a single token or subword within the
+  vocabulary. This will be considered as a <strong>discrete action
+    space</strong> because there are a finte amount of actions that the
+  agent can take. On the hand, a robot can take real life actions (e.g
+  move forward, move left, etc). This would qualify as a <strong>continous
+    action space</strong> because the actions are real valued vectors
+  defined everywhere in the space.</p>
+  <h2 id="policies">Policies</h2>
+  <p>A policy defines how the agent decides to take an action. In an LLM,
+  you can define the policy to be <span
+                                      class="math inline"><em>π</em></span>:</p>
+  <p><span
+         class="math display"><em>a</em><sub><em>t</em></sub> ∼ <em>π</em><sub><em>θ</em></sub>(⋅|<em>s</em><sub><em>t</em></sub>)</span></p>
+  <p>Here, an action, <span
+                          class="math inline"><em>a</em><sub><em>t</em></sub></span> is sampled
+                        from the policy <span
+                                            class="math inline"><em>π</em><sub><em>θ</em></sub></span> given the
+                                          state, <span class="math inline"><em>s</em><sub><em>t</em></sub></span>.
+                                          The policy, <span
+                                                          class="math inline"><em>π</em><sub><em>θ</em></sub></span> has
+                                                        parameters <span class="math inline"><em>θ</em></span>. You can think of
+                                                        this as an LLM where <span
+                                                                                 class="math inline"><em>a</em><sub><em>t</em></sub></span> is the next
+                                                                               word.</p>
+  <p><strong>Note</strong>: It seems like in the literaty the word “agent”
+  and “policy” are used interchangibly.</p>
+  <p>There are different types of policies:</p>
+  <p><strong>Categorical</strong>:</p>
+</body>
