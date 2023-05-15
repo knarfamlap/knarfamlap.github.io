@@ -47,3 +47,10 @@ a:visited {
   width: 40%;
 
 }
+
+.center {
+ width: 80%;
+ margin-left: 10%;
+ display: block;
+ text-align: center;
+}
