@@ -1,18 +1,19 @@
 body {
-  font-family: system-ui, sans-serif;
   text-align: justify;
   width: 96%;
   max-width: 600px;
   margin: 0 auto;
+  padding-top: 2%;
 }
 
 p {
-  line-height: 1.5em;
+  line-height: 1.0em;
   text-align: justify;
 }
 
 .image {
   text-align: center;
+  margin-top: 8%;
 }
 
 .column {
@@ -24,19 +25,6 @@ p {
   content: "";
   display: table;
   clear: both;
-}
-
-.header-text {
-  color: rgb(82, 171, 144);
-}
-
-a:link {
-  color: rgb(82, 171, 144);
-}
-
-a:visited {
-  color: rgb(82, 171, 144);
-  background-color: transparent;
 }
 
 .formula {
