@@ -11,9 +11,25 @@ p {
   text-align: justify;
 }
 
-.image {
+.picture {
+  display: flex;
+  justify-content: left;
   text-align: left;
   margin-top: 8%;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+}
+
+.box {
+  float: center;
+  width: 96%;
+  padding: 1.5em;
+  margin: 10px;
+  border-style: double;
 }
 
 .column {
@@ -37,8 +53,15 @@ p {
 }
 
 .center {
- width: 80%;
- margin-left: 10%;
- display: block;
- text-align: center;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  background-color: #f1f1f1;
+  color: black;
+  font-size: 0.8em;
+  font-style: italic;
 }
